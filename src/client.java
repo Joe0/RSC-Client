@@ -8,10 +8,15 @@ import org.moparscape.iface.ClientInterface;
 import org.moparscape.userver.Server;
 import org.rscdaemon.client.GameWindow;
 import org.rscdaemon.client.Inputs;
-import org.rscdaemon.client.mudclient;
 import org.rscdaemon.client.util.Config;
 
 public class client extends GameWindow implements ClientInterface {
+	
+	public static void main(String[] args) {
+		client client = new client();
+		client.init();
+		client.start();
+	}
 
 	@Override
 	public void setServer(String server) {
